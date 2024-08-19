@@ -1,0 +1,24 @@
+[project]
+name = "backtesting"
+version = "0.1.0"
+description = "Add a short description here"
+authors = ["prem <prem.ch@ku.th>"]
+channels = ["conda-forge"]
+platforms = ["osx-64"]
+
+[tasks]
+
+[dependencies]
+python = "3.11.*"
+
+[pypi-dependencies]
+jupyter = "*"
+notebook = { version = "<7" }
+prices-loaders = {git = "https://github.com/batprem/price-loaders"}
+pandas = "*"
+backtesting = "*"
+bokeh = { version = "==2.4.3" }
+numpy = { version = "==1.23.5" }
+seaborn = "*"
+black = "*"
+scikit-optimize = "*"
